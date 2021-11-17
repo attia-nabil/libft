@@ -12,51 +12,32 @@
 
 #include "libft.h"
 
-char	*ft_strcpy(char *dest, char *src)
+char		*ft_strjoin(char const *s1, char const *s2)
 {
-	int	i;
-
-	i = 0;
-	while (src[i] != '\0')
-	{
-		dest[i] = src[i];
-		++i;
-	}
-	dest[i] = '\0';
-	return (dest);
-}
-
-char	*ft_strcat(char *dest, char *src)
-{
-	int	i;
-	int	size;
-
-	size = ft_strlen(dest);
-	i = 0;
-	while (src[i])
-	{
-		dest[size + i] = src[i];
-		i++;
-	}
-	dest[size + i] = '\0';
-	return (dest);
-}
-
-char	*ft_strjoin(char const *s1, char const *s2)
-{
-	char	*ptr;
+	int		i;
+	int		j;
+	char	*str;
 
 	if (!s1 || !s2)
 		return (NULL);
-	ptr = malloc(sizeof(char) *(ft_strlen(s1) + ft_strlen(s2) + 1));
-	if (!ptr)
+	i = 0;
+	j = 0;
+	str = (char *)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
+	if (str == NULL)
 		return (NULL);
-	ft_strcpy(ptr, (char *)s1);
-	ft_strcat(ptr, (char *)s2);
-	return (ptr);
+	while (s1[i] != '\0')
+	{
+		str[i] = s1[i];
+		i++;
+	}
+	while (s2[j] != '\0')
+	{
+		str[i + j] = s2[j];
+		j++;
+	}
+	str[i + j] = '\0';
+	return (str);
 }
-
-// #include <stdio.h>
 
 // int main()
 // {

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nattia <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: nattia <nattia@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/13 12:53:19 by nattia            #+#    #+#             */
-/*   Updated: 2021/11/13 12:53:20 by nattia           ###   ########.fr       */
+/*   Updated: 2021/11/17 17:09:08 by nattia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ static char			*ft_strndup(const char *s, size_t n)
 	str = (char *)malloc(sizeof(char) * n + 1);
 	if (str == NULL)
 		return (NULL);
-	str = ft_strncpy(str, s, n);
+	str = ft_strlcpy(str, s, n);
 	str[n] = '\0';
 	return (str);
 }

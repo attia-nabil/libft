@@ -12,62 +12,77 @@
 
 #include "libft.h"
 
-static int			ft_cntwrd(char const *s, char c)
+static size_t	count_words(char const *s, char c)
 {
-	unsigned int	i;
-	int				cntr;
+	size_t	i;
+	size_t	w;
 
 	i = 0;
-	cntr = 0;
+	w = 0;
 	while (s[i])
 	{
-		while (s[i] == c)
-			i++;
-		if (s[i] != '\0')
-			cntr++;
-		while (s[i] && (s[i] != c))
-			i++;
+		if (s[i] != c && (s[i + 1] == c || s[i + 1] == '\0'))
+			w++;
+		i++;
 	}
-	return (cntr);
+	return (w);
 }
 
-static char			*ft_strndup(const char *s, size_t n)
+static size_t	words_len(char const *s, char c)
 {
-	char			*str;
-
-	str = (char *)malloc(sizeof(char) * n + 1);
-	if (str == NULL)
-		return (NULL);
-	str = ft_strlcpy(str, s, n);
-	str[n] = '\0';
-	return (str);
-}
-
-char				**ft_strsplit(char const *s, char c)
-{
-	int				i;
-	int				j;
-	int				k;
-	char			**tab;
+	size_t	i;
 
 	i = 0;
-	k = 0;
-	tab = (char **)malloc(sizeof(char *) * (ft_cntwrd(s, c)) + 1);
-	if (tab == NULL)
-		return (NULL);
-	while (s[i])
+	while (s[i] != c && s[i])
+		i++;
+	return (i);
+}
+
+static void	leak(char **split, size_t w)
+{
+	size_t	i;
+
+	i = -1;
+	while (++i < w)
+		free(split[i]);
+	free(split);
+}
+
+static void	write_split(char **split, char const *s, size_t w, char const c)
+{
+	size_t	i;
+	size_t	j;
+	size_t	l;
+
+	i = -1;
+	while (++i < w)
 	{
-		while (s[i] == c)
-			i++;
-		j = i;
-		while (s[i] && s[i] != c)
-			i++;
-		if (i > j)
-		{
-			tab[k] = ft_strndup(s + j, i - j);
-			k++;
-		}
+		while (*s == c)
+			s++;
+		l = words_len(s, c);
+		split[i] = (char *)malloc(sizeof(char) * (l + 1));
+		if (!split[i])
+			leak(split, i);
+		j = 0;
+		while (j < l)
+			split[i][j++] = *s++;
+		split[i][j] = '\0';
 	}
-	tab[k] = NULL;
-	return (tab);
+	split[i] = NULL;
+}
+
+char	**ft_split(char const *s, char c)
+{
+	size_t	w;
+	char	**rtn;
+
+	if (!s)
+		return (NULL);
+	w = count_words(s, c);
+	rtn = (char **)malloc(sizeof(char *) * (w + 1));
+	if (!rtn)
+		return (NULL);
+	write_split(rtn, s, w, c);
+	rtn[w] = 0;
+	return (rtn);
 }

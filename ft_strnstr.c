@@ -14,41 +14,25 @@
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	char	*str;
 	size_t	i;
-	size_t	check;
+	size_t	f;
+	size_t	n_len;
+	char	*s;
 
-	i = -1;
-	str = (char *)haystack;
+	s = (char *)haystack;
+	n_len = ft_strlen(needle);
 	if (*needle == '\0' || haystack == needle)
-		return (str);
-	while (*str != '\0' && len--)
+		return (s);
+	i = 0;
+	while (s[i] && i < len)
 	{
-		if (*str == *needle)
-		{
-			check = 1;
-			while (needle[++i] != '\0')
-				if (str[i] != needle[i])
-					check = 0;
-			if (i > len)
-				break ;
-			if (check == 1)
-				return (str);
-		}
-		str++;
+		f = 0;
+		while (needle[f] && s[i + f] && i + f < len && s[i + f] == needle[f])
+			f++;
+		if (f == n_len)
+			return (s + i);
+		i++;
 	}
-	return (NULL);
+	return (0);
 }
 
-// #include <stdio.h>
-
-// int main()
-// {
-//    const char *largestring = "Foo Bar Baz";
-//     const char *smallstring = "Bar";
-//     char *ptr;
-
-//     ptr = strnstr(largestring, smallstring, 4); 
-//     printf("%s" , ptr);
-//     return 0;
-// }

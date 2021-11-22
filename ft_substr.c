@@ -6,7 +6,7 @@
 /*   By: nattia <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/13 12:52:34 by nattia            #+#    #+#             */
-/*   Updated: 2021/11/13 12:52:37 by nattia           ###   ########.fr       */
+/*   Updated: 2021/11/22 16:10:43 by nattia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	i = start;
 	j = 0;
+	if (start >= ft_strlen(s))
+		return (ft_strdup(""));
+	if (len > ft_strlen(s) - start)
+		len = ft_strlen(s) - start;
 	ptr = malloc(len + 1);
 	if (!s || !ptr)
 		return (0);

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nattia <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: nattia <nattia@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/13 12:53:04 by nattia            #+#    #+#             */
-/*   Updated: 2021/11/13 12:53:06 by nattia           ###   ########.fr       */
+/*   Updated: 2021/11/22 16:53:53 by nattia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char		*ft_itoa(int n)
 	if (!(str = (char *)malloc(sizeof(char) * 2)))
 		return (NULL);
 	if (n == -2147483648)
-		return (ft_strcpy(str, "-2147483648"));
+		return (ft_strdup("-2147483648"));
 	if (n < 0)
 	{
 		str[0] = '-';
@@ -35,3 +35,12 @@ char		*ft_itoa(int n)
 	}
 	return (str);
 }
+
+// #include <stdio.h>
+
+// int main()
+// {
+// 	int str = 2147;
+// 	printf("%s", ft_itoa(str));
+	
+// }

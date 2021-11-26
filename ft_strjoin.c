@@ -6,13 +6,13 @@
 /*   By: nattia <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/13 12:52:05 by nattia            #+#    #+#             */
-/*   Updated: 2021/11/13 12:52:08 by nattia           ###   ########.fr       */
+/*   Updated: 2021/11/26 15:25:24 by nattia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char		*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
 	int		i;
 	int		j;

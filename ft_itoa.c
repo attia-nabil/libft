@@ -6,41 +6,52 @@
 /*   By: nattia <nattia@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/13 12:53:04 by nattia            #+#    #+#             */
-/*   Updated: 2021/11/22 16:53:53 by nattia           ###   ########.fr       */
+/*   Updated: 2021/11/24 14:05:20 by nattia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char		*ft_itoa(int n)
+static void	len_and_sign(int *n, int *s, int *l, int *t)
 {
-	char	*str;
-
-	if (!(str = (char *)malloc(sizeof(char) * 2)))
-		return (NULL);
-	if (n == -2147483648)
-		return (ft_strdup("-2147483648"));
-	if (n < 0)
+	if (*n < 0)
 	{
-		str[0] = '-';
-		str[1] = '\0';
-		str = ft_strjoin(str, ft_itoa(-n));
+		*n = *n * -1;
+		*s = 1;
 	}
-	else if (n >= 10)
-		str = ft_strjoin(ft_itoa(n / 10), ft_itoa(n % 10));
-	else if (n < 10 && n >= 0)
+	while (*t)
 	{
-		str[0] = n + '0';
-		str[1] = '\0';
+		*t = *t / 10;
+		*l = *l + 1;
 	}
-	return (str);
+	*l = *l + *s;
 }
 
-// #include <stdio.h>
+char	*ft_itoa(int n)
+{
+	int		t;
+	int		s;
+	int		l;
+	char	*rtn;
 
-// int main()
-// {
-// 	int str = 2147;
-// 	printf("%s", ft_itoa(str));
-	
-// }
+	if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
+	if (n == 0)
+		return (ft_strdup("0"));
+	t = n;
+	s = 0;
+	l = 1;
+	len_and_sign(&n, &s, &l, &t);
+	rtn = (char *)malloc(sizeof(char) * l);
+	if (!rtn)
+		return (NULL);
+	rtn[--l] = '\0';
+	while (l--)
+	{
+		rtn[l] = (n % 10) + '0';
+		n = n / 10;
+	}
+	if (s)
+		rtn[0] = '-';
+	return (rtn);
+}

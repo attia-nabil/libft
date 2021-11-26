@@ -6,7 +6,7 @@
 /*   By: nattia <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/13 12:49:05 by nattia            #+#    #+#             */
-/*   Updated: 2021/11/13 12:49:12 by nattia           ###   ########.fr       */
+/*   Updated: 2021/11/26 15:25:03 by nattia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,4 +35,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (0);
 }
-

@@ -6,13 +6,13 @@
 /*   By: nattia <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/13 12:54:38 by nattia            #+#    #+#             */
-/*   Updated: 2021/11/13 12:54:41 by nattia           ###   ########.fr       */
+/*   Updated: 2021/11/26 15:24:40 by nattia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char		*ft_strdup(const char *s1)
+char	*ft_strdup(const char *s1)
 {
 	char	*str;
 	size_t	i;

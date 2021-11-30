@@ -23,8 +23,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	const char	*src1;
 	char		*dest1;
 
-	src1 = src;
-	dest1 = dest;
+	src1 = (const char *)src;
+	dest1 = (char *)dest;
 	i = 0;
 	if (!src1 && !dest1)
 		return (NULL);
@@ -40,13 +40,12 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 
 /*
 #include <stdio.h>
+#include <string.h>
 
 int main()
 {
-	char str[50] = "nabil";
-	char dst[50] = "145551337";
-	printf("dsr Before : %s\n" , dst);
-	ft_memcpy(dst, str, 5);
-	printf("dst After : %s\n" , dst);
-	return 0;
-}*/
+	char src[50] = "Nabil";
+	char dst[50] = "Attia";
+	printf("%s", memcpy(NULL,src,5));
+}
+*/

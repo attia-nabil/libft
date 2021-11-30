@@ -32,22 +32,12 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	return (0);
 }
 
-// #include <stdio.h>
+#include <stdio.h>
+#include <string.h>
 
-// int main () {
-//    char str1[15] = "abedef";
-//    char str2[15] = "abcdef";
-//    int ret;
-
-//    ret = ft_strncmp(str1, str2, 4);
-
-//    if(ret < 0) {
-//       printf("str1 is less than str2\n");
-//    } else if(ret > 0) {
-//       printf("str2 is less than str1\n");
-//    } else {
-//       printf("str1 is equal to str2\n");
-//    }
-//    printf("Retournée %d\n" , ret);
-//    return(0);
-// }
+int main()
+{
+	char s1[50] = "NABIL";
+	char s2[50] = "NABIL";
+	printf("%d" , ft_memcmp(NULL,s1,5));
+}

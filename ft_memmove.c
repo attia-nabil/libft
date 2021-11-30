@@ -45,16 +45,13 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	return (dst);
 }
 
-// #include <stdio.h>
-// #include <string.h>
-// #include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 
-// int main()
-// {
-// 		// char src[50] = "ABCD";
-// 	char dst[50] = "ABCD";
-// 	// printf("src Before : %s\n" , src);
-// 	// ft_memmove(NULL, src, 6);
-// 	printf("src After : %s\n" , memmove(NULL, NULL, 6));
-// 	return 0;
-// }
+int main()
+{
+	char buffer[50] = "abcdefgh";
+	printf("%s\n" , ft_memmove(buffer + 1, buffer, 4));
+	printf("%s\n" , ft_memcpy(buffer + 1, buffer, 4));
+}

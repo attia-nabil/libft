@@ -27,13 +27,12 @@ void	*ft_calloc(size_t count, size_t size)
 	return (ptr);
 }
 
-// int main(void)
-// {
-// 	char *str;
-// 	str = ft_calloc(100, sizeof(char));
-// 	for (int i = 0; i < 99 ; i++)
-// 	{
-// 		printf(" %d is ; |%d| \n" , i + 1,str[i]);
-// 	}
-// 	return 0;
-// }
+int main()
+{
+	char *ptr = ft_calloc(5, sizeof(char));
+	for (int i = 0; i < 5; i++)
+	{
+		printf("|%s|\n" , ptr[i]);
+		i++;
+	}
+}

@@ -10,10 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*The isalpha() function checks whether a character is an alphabet or not.*/
-/*Zero (0)	If the parameter isn't an alphabet.*/
-/*Non zero number	If the parameter is an alphabet.*/
-
 #include "libft.h"
 
 int	ft_isalpha(int c)
@@ -23,20 +19,11 @@ int	ft_isalpha(int c)
 	return (0);
 }
 
-/* #include <stdio.h>
-#include <ctype.h>
+#include <stdio.h>
+
 int main()
 {
-    char c;
-
-    printf("Enter a character: ");
-    scanf("%c", &c);
-
-    if (ft_isalpha(c) == 0)
-         printf("%c is not an alpha.", c);
-    else
-         printf("%c is an alpha.", c);
-
-    return 0;
+	char c = '1';
+	char s = ft_isalpha(c);
+	printf("%d", s);
 }
-*/

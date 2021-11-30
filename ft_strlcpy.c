@@ -41,20 +41,14 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		return (i);
 	}
 }
+/*
+#include <stdio.h>
+#include <string.h>
 
-// #include <stdio.h>
-// #include <string.h>
-
-// int main()
-// {
-// 	char src[50] = "nabil";
-// 	char dst[50] = "";
-// 	printf("dst Before : %s\n" , dst);
-// 	ft_strlcpy(dst, src, 10);
-// 	printf("dst After : %s\n" , dst);
-// 	printf("len : %zu\n" , ft_strlcpy(dst, src, 5));
-// 	return 0;
-// 	// char	dst[100];
-// 	// char	*src = "hello world";
-// 	// strlcpy(NULL, src, 10); //printf("%s")
-// }
+int main()
+{
+	char src[50] = "NABIL";
+	char dst[50] = "ATTIA";
+	printf("strlcpy rt : %d dst : %s", ft_strlcpy(dst, src, 4) , dst);
+}
+*/

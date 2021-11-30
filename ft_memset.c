@@ -31,15 +31,12 @@ void	*ft_memset(void *b, int c, size_t len)
 }
 
 /*
-
 #include <stdio.h>
 
 int main()
 {
-	char str[50] = "nabil attia";
-	printf("Str Before : %s\n" , str);
-	ft_memset(str, '0', 5);
-	printf("Str After : %s\n" , str);
-	return 0;
+	char c = 'c';
+	char str[50] = "Nabil Attia";
+	printf("%s" , ft_memset(str, c, 0));
 }
 */

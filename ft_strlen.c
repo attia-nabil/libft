@@ -25,19 +25,13 @@ size_t	ft_strlen(const char *s)
 	}
 	return (i);
 }
-
 /*
-
 #include <stdio.h>
-#include <string.h>
 
-int main(int argc, char ** argv)
+int main()
 {
- 
-  if ( argc != 2 )
-    printf( "Usage: %s string\n", argv[0] );
-  else
-    printf( "Input string has a length of %zu\n", ft_strlen( argv[1]));
+	char str[50] = "Nabil ATTIA";
+	int len = ft_strlen(str);
+	printf("%d" , len);
 }
-
 */

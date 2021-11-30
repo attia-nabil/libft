@@ -37,13 +37,14 @@ int	ft_atoi(const char *str)
 	}
 	return (sign * n);
 }
+/*
+#include <stdio.h>
+#include <string.h>
 
-// #include <stdio.h>
-
-// int main()
-// {
-//     char str[50] = "     -2147483648";
-//     printf("Str Before ; %s\n " , str);
-//     printf("Str after ; %d\n" , ft_atoi(str));
-//     return 0;
-// }
+int main()
+{
+	char str[50] = "-12-3414";
+	int ato = ft_atoi(str);
+	printf("%d" , ato);
+}
+*/

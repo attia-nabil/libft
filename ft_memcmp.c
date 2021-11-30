@@ -37,8 +37,8 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 
 int main()
 {
-	char s1[50] = "NABIL";
-	char s2[50] = "NABIL";
-	printf("%d" , ft_memcmp(NULL,s1,5));
+	int s1[50] = {1,2,3,4};
+	int s2[50] = {1,2,3,4};
+	printf("%d" , ft_memcmp(s1,s2,4));
 }
 */

@@ -6,7 +6,7 @@
 /*   By: nattia <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/13 12:52:34 by nattia            #+#    #+#             */
-/*   Updated: 2021/11/30 18:29:39 by nattia           ###   ########.fr       */
+/*   Updated: 2021/11/30 18:58:15 by nattia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (len > ft_strlen(s) - start)
 		len = ft_strlen(s) - start;
 	ptr = malloc(len + 1);
-	if (!s || !ptr)
-		return (0);
+	if (!ptr)
+		return (NULL);
 	while (i < ft_strlen(s) && j < len)
 	{
 		ptr[j++] = s[i++];
@@ -36,3 +36,12 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ptr[j] = '\0';
 	return (ptr);
 }
+
+#include <stdio.h>
+
+int main()
+{
+	char ptr[50] = "NABIL ATTIA";
+	printf("%s" , ft_substr(ptr, 12, 5));
+}
+

@@ -10,13 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/* -- The strlcpy() and strlcat() 
- * functions copy and concatenate strings respectively. 
- * They're designed to be safer, more consistent,
- * and less error-prone replacements for strncpy() and strncat().
- * -- Return : For strlcpy() that means the length of src.
- * */
-
 #include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)

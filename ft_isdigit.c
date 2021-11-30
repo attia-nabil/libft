@@ -10,11 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/* isdigit(c) is a function in C which can be used to 
- check if the passed character is a digit or not.
- It returns a non-zero value if it’s a digit else it returns 0. For example, 
- it returns a non-zero value for ‘0’ to ‘9’ and zero for others. */
-
 #include "libft.h"
 
 int	ft_isdigit(int c)

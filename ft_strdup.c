@@ -29,10 +29,11 @@ char	*ft_strdup(const char *s1)
 	str[i] = '\0';
 	return (str);
 }
-
+/*
 #include <stdio.h>
 
 int main()
 {
 	printf("%s" , ft_strdup("NABIL ATTIA"));
 }
+*/

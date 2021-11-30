@@ -10,11 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/* La  fonction bzero() met à 0 les n premiers octets du bloc
-       pointé par s. 
-	   bzero -- write zeroes to a byte string
-	   */
-
 #include "libft.h"
 
 void	ft_bzero(void *s, size_t n)

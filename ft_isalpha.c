@@ -6,7 +6,7 @@
 /*   By: nattia <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/13 12:43:59 by nattia            #+#    #+#             */
-/*   Updated: 2021/11/13 12:44:06 by nattia           ###   ########.fr       */
+/*   Updated: 2021/11/30 18:15:55 by nattia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_isalpha(int c)
 		return (1);
 	return (0);
 }
-
+/*
 #include <stdio.h>
 
 int main()
@@ -27,3 +27,4 @@ int main()
 	char s = ft_isalpha(c);
 	printf("%d", s);
 }
+*/

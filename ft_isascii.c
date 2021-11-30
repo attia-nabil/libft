@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*Test a character to see if it's a 7-bit ASCII character*/
-
 #include "libft.h"
 
 int	ft_isascii(int c)

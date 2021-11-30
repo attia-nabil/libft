@@ -10,9 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/* La fonction memset() remplit les len premiers octets
- de la zone mémoire pointée par b avec l'octet c.*/
-
 #include <string.h>
 
 void	*ft_memset(void *b, int c, size_t len)

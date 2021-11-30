@@ -10,11 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*La fonction memcpy() copie n octets depuis la zone mémoire
-       src vers la zone mémoire dest.
-         La fonction memcpy() renvoie un pointeur sur dest.
-*/
-
 #include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)

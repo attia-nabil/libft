@@ -10,9 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/* checks for an alphanumeric character; 
- * it is equivalent to (isalpha(c) || isdigit(c))*/
-
 #include "libft.h"
 
 int	ft_isalnum(int c)

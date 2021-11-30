@@ -86,7 +86,7 @@ char	**ft_split(char const *s, char c)
 	rtn[w] = 0;
 	return (rtn);
 }
-
+/*
 #include <stdio.h>
 
 int main()
@@ -100,3 +100,4 @@ int main()
 	}
 	printf("%s", ptr[i + 1]);
 }
+*/

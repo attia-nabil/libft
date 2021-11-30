@@ -10,9 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/* La fonction strcat() ajoute la chaîne src à la fin de la chaîne dest
- en écrasant le caractère nul (« \0 ») à la fin de dest */
-
 #include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)

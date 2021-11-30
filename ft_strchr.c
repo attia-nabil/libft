@@ -6,14 +6,9 @@
 /*   By: nattia <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 00:39:21 by nattia            #+#    #+#             */
-/*   Updated: 2021/11/26 15:24:22 by nattia           ###   ########.fr       */
+/*   Updated: 2021/11/30 18:09:42 by nattia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/* Cette fonction recherche la première occurrence du caractère
- passé en second paramètre dans la chaîne de caractères 
- spécifiée via le premier paramètre.
- */
 
 #include "libft.h"
 
@@ -32,7 +27,7 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)(s + i));
 	return (NULL);
 }
-
+/*
 #include <stdio.h>
 #include <string.h>
 int main()
@@ -41,3 +36,4 @@ int main()
 	char c = '\0';
 	printf("%s" , ft_strchr(str,"NULL"));
 }
+*/

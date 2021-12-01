@@ -6,7 +6,7 @@
 /*   By: nattia <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/13 12:52:34 by nattia            #+#    #+#             */
-/*   Updated: 2021/11/30 18:58:15 by nattia           ###   ########.fr       */
+/*   Updated: 2021/12/01 10:46:23 by nattia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ptr[j] = '\0';
 	return (ptr);
 }
-
+/*
 #include <stdio.h>
 
 int main()
@@ -44,4 +44,4 @@ int main()
 	char ptr[50] = "NABIL ATTIA";
 	printf("%s" , ft_substr(ptr, 12, 5));
 }
-
+*/

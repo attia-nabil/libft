@@ -6,7 +6,7 @@
 /*   By: nattia <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/30 18:07:23 by nattia            #+#    #+#             */
-/*   Updated: 2021/11/30 18:07:31 by nattia           ###   ########.fr       */
+/*   Updated: 2021/12/01 11:43:49 by nattia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,4 +24,16 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		f(i, s + i);
 		i++;
 	}
+}
+#include <stdio.h>
+void f(unsigned int i, char *s)
+{
+		*s = *s - 32;
+}
+
+int main()
+{
+	char str[50] = "aaaa";
+ ft_striteri(str, *f);
+ printf("%s" , str);
 }

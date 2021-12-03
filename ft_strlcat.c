@@ -29,15 +29,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	ft_strlcpy(dst, src, size);
 	return (srclen + dstlen);
 }
-/*
-#include <stdio.h>
-
-int main()
-{
-	char src[50] = "NABIL";
-	char dst[50] = "ATTIA";
-	printf("%d" , ft_strlcat(dst, src, 10));
-	printf("%s" , dst);
-
-}
-*/

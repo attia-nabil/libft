@@ -6,13 +6,13 @@
 /*   By: nattia <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/13 12:54:13 by nattia            #+#    #+#             */
-/*   Updated: 2021/12/01 11:02:19 by nattia           ###   ########.fr       */
+/*   Updated: 2021/12/01 14:12:21 by nattia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strstart(char *str, char *set)
+static char	*strstart(char *str, char *set)
 {
 	int	i;
 	int	j;
@@ -32,7 +32,7 @@ char	*strstart(char *str, char *set)
 	return (&str[i]);
 }
 
-int	strend(char *str, char *set)
+static int	strend(char *str, char *set)
 {
 	int		i;
 	int		j;

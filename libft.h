@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nattia <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: nattia <nattia@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/30 18:41:55 by nattia            #+#    #+#             */
-/*   Updated: 2021/11/30 18:41:59 by nattia           ###   ########.fr       */
+/*   Updated: 2021/12/01 14:05:24 by nattia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,6 @@
 
 # include <stdlib.h>
 # include <unistd.h>
-
-typedef unsigned char	t_byte;
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);

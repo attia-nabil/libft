@@ -34,14 +34,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		return (i);
 	}
 }
-/*
-#include <stdio.h>
-#include <string.h>
-
-int main()
-{
-	char src[50] = "NABIL";
-	char dst[50] = "ATTIA";
-	printf("strlcpy rt : %d dst : %s", ft_strlcpy(dst, src, 4) , dst);
-}
-*/

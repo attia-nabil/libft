@@ -18,19 +18,3 @@ int	ft_tolower(int c)
 		return (c + 32);
 	return (c);
 }
-
-/*
-
-#include <stdio.h>
-
-int main()
-{
-    char ch;
- 
-    ch = 'L';
-    printf("%c in lowercase is represented as  %c", ch, ft_tolower(ch));
- 
-    return 0;
-}
-
-*/

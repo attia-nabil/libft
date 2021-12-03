@@ -32,15 +32,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-/*
-#include <stdio.h>
-#include <string.h>
-
-int main()
-{
-	char src[50] = "Nabil";
-	char dst[50] = "Attia";
-	printf("%s", memcpy(NULL,src,5));
-}
-*/

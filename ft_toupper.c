@@ -18,16 +18,3 @@ int	ft_toupper(int c)
 		return (c - 32);
 	return (c);
 }
-/*
-#include <stdio.h>
-
-int main()
-{
-    char ch;
- 
-    ch = 108;
-    printf("%c in uppercase is represented as  %c", ch, ft_toupper(ch));
- 
-    return 0;
-}
-*/

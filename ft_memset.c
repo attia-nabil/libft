@@ -26,14 +26,3 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
-
-/*
-#include <stdio.h>
-
-int main()
-{
-	char c = 'c';
-	char str[50] = "Nabil Attia";
-	printf("%s" , ft_memset(str, c, 0));
-}
-*/

@@ -36,12 +36,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ptr[j] = '\0';
 	return (ptr);
 }
-/*
-#include <stdio.h>
-
-int main()
-{
-	char ptr[50] = "NABIL ATTIA";
-	printf("%s" , ft_substr(ptr, 12, 5));
-}
-*/

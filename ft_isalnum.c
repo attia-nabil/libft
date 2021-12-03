@@ -20,22 +20,3 @@ int	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
-
-/*
-#include <stdio.h>
-#include <ctype.h>
-int main()
-{
-    char c;
-
-    printf("Enter a character: ");
-    scanf("%c", &c);
-
-    if (ft_isalnum(c) == 0)
-         printf("%c is not an alnum.", c);
-    else
-         printf("%c is an alnum.", c);
-
-    return 0;
-}
-*/

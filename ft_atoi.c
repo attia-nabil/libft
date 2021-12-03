@@ -6,7 +6,7 @@
 /*   By: nattia <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/13 12:35:42 by nattia            #+#    #+#             */
-/*   Updated: 2021/11/13 12:36:01 by nattia           ###   ########.fr       */
+/*   Updated: 2021/12/01 13:53:38 by nattia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,14 +37,3 @@ int	ft_atoi(const char *str)
 	}
 	return (sign * n);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-
-int main()
-{
-	char str[50] = "-12-3414";
-	int ato = ft_atoi(str);
-	printf("%d" , ato);
-}
-*/

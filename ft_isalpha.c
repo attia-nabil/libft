@@ -18,13 +18,3 @@ int	ft_isalpha(int c)
 		return (1);
 	return (0);
 }
-/*
-#include <stdio.h>
-
-int main()
-{
-	char c = '1';
-	char s = ft_isalpha(c);
-	printf("%d", s);
-}
-*/

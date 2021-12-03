@@ -27,13 +27,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)(s + i));
 	return (NULL);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-int main()
-{
-	char str[50] = "NABIL ATTIA";
-	char c = '\0';
-	printf("%s" , ft_strchr(str,"NULL"));
-}
-*/

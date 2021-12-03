@@ -18,24 +18,3 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
-
-/*
-
-#include <stdio.h>
-#include <ctype.h>
-int main()
-{
-    char c;
-
-    printf("Enter a character: ");
-    scanf("%c", &c);
-
-    if (ft_isprint(c) == 0)
-         printf("%c is not an print.", c);
-    else
-         printf("%c is an print.", c);
-
-    return 0;
-}
-
-*/

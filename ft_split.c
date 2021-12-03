@@ -86,18 +86,3 @@ char	**ft_split(char const *s, char c)
 	rtn[w] = 0;
 	return (rtn);
 }
-/*
-#include <stdio.h>
-
-int main()
-{
-	char s[50] = " Nabil ATTIA 1337";
-	char **ptr = ft_split(s, 0);
-	size_t i = 0;
-	while (ptr[i])
-	{
-		printf("%s\n", ptr[i++]);
-	}
-	printf("%s", ptr[i + 1]);
-}
-*/

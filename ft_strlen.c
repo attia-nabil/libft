@@ -23,13 +23,3 @@ size_t	ft_strlen(const char *s)
 	}
 	return (i);
 }
-/*
-#include <stdio.h>
-
-int main()
-{
-	char str[50] = "Nabil ATTIA";
-	int len = ft_strlen(str);
-	printf("%d" , len);
-}
-*/

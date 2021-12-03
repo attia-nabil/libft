@@ -38,11 +38,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str[i + j] = '\0';
 	return (str);
 }
-
-// int main()
-// {
-//     char ptr[50] = "nabil attia";
-//     char str[50] = " St 1337";
-//     printf("%s" ,ft_strjoin(ptr, str));
-//     return 0;
-// }

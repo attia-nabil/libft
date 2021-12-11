@@ -20,8 +20,8 @@ All you need is a shell and a C compiler like `gcc` or `clang`.
 To compile the entire thing just clone the repo and run `make`:
 
 ```bash
-$ git clone https://github.com/librity/ft_libft.git
-$ cd ft_libft
+$ git clone https://github.com/attia-nabil/libft.git
+$ cd libft
 $ make
 ```
 
